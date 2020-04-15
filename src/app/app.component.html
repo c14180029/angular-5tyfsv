@@ -1,11 +1,16 @@
 <hello name="{{ name }}"></hello>
 <p>
-  Tak turu ae yo tf
-  {{"Coba commit"}}
-  25 + 25 = {{25 + 25}}
+
 
 </p>
 <div>
-  {{item.nama + ", harga: Rp. " + item.harga}}
-
+  A<input [(ngModel)]="a" type ="number"/>
+  <br>
+  B<input [(ngModel)]="b" type ="number"/>
+  <button (click)="SaveVal()">Save Val</button>
+  
+</div>
+{{total}}
+<div *ngIf = "total != 0">
+   {{output}}
 </div>
