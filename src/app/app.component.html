@@ -8,9 +8,8 @@
   <br>
   B<input [(ngModel)]="b" type ="number"/>
   <button (click)="SaveVal()">Save Val</button>
-  
+  <button (click)="ClearVal()">Clear Val</button>
 </div>
-{{total}}
-<div *ngIf = "total != 0">
-   {{output}}
+Total = {{total}}
+<div *ngIf = "total != 0"[innerHTML]="output" [(ngModel)]="data">
 </div>
